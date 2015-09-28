@@ -47,10 +47,12 @@
   "posts": [{
     "title": "I offered you pringles...",
     "content": "U bought my dining room table, I offered u pringles 2 stay and hang out but u didn't have the time. Let's try again maybe w/ doritos? Text me ne time @five-4-one-22-sex-nine",
-    "image": "http://www.paulandstorm.com/wp-content/uploads/Image/Pingles-Sad.jpg"
+    "image": "http://www.paulandstorm.com/wp-content/uploads/Image/Pingles-Sad.jpg",
+    "category": "3"
   },{
     "title": "Granny's old toothbrush",
     "content": "Nana's gone but her brush remains. $10 near mint. Serious buyers only. Email denturedame@gmail.com",
-    "image": "http://americasfavoritetool.weebly.com/uploads/1/5/5/4/15547912/34445_orig.jpeg"
+    "image": "http://americasfavoritetool.weebly.com/uploads/1/5/5/4/15547912/34445_orig.jpeg",
+    "category":"8"
   }]
 }
