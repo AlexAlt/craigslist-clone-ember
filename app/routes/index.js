@@ -6,8 +6,30 @@ export default Ember.Route.extend({
   // }
   model() {
       return Ember.RSVP.hash({
-        categories: this.store.findAll('category'),
-        posts: this.store.findAll('post')
+        communityCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'community');
+        }),
+        personalsCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'personals');
+        }),
+        discussionCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'discussion forums');
+        }),
+        housingCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'housing');
+        }),
+        forsaleCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'for sale');
+        }),
+        servicesCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'services');
+        }),
+        jobsCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'jobs');
+        }),
+        gigsCategories: this.store.findAll('category').then(function(categories){
+          return categories.filterBy('parentCategory', 'gigs');
+        }),
       });
     }
 });

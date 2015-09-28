@@ -9,23 +9,7 @@
       <h2>craigslist</h2>
     </div>
 
-
-    <div class="center-column">
-      <div class="community-column">
-        <h4>community</h4>
-        {{#each model.categories as |category|}}
-          
-          {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
-
-        {{/each}}
-      </div>
-      <div class="housing-column">
-        <h4>housing</h4>
-      </div>
-      <div class="jobs-column">
-        <h4>jobs</h4>
-      </div>
-    </div>
+    {{home-page categories=model}}
 
     <div class="right-sidebar">
       <p>language</p>
