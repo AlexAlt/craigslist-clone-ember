@@ -1,3 +1,12 @@
+#pagecontainer {
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  min-height: 600px;
+  padding: 16px 0 1em 0;
+  width: 868px;
+}
+
 .left-sidebar {
   float: left;
   background-color: #f4f4f4;
@@ -30,29 +39,43 @@
 
 .community-column {
   float: left;
-  background-color: #eee;
+  /*background-color: #eee;*/
   width: 33%;
-  border-top: 1px #ccc solid;
-  border-bottom: 1px #ccc solid;
+  /*border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;*/
 }
 
 .housing-column {
   float: left;
-  background-color: #eee;
-  width: 33%;
-  border-top: 1px #ccc solid;
-  border-bottom: 1px #ccc solid;
+  /*background-color: #eee;*/
+  width: 37%;
+  /*border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;*/
+  padding: 0 4%;
 }
 
 .jobs-column {
   float: left;
-  background-color: #eee;
-  width: 33%;
-  border-top: 1px #ccc solid;
-  border-bottom: 1px #ccc solid;
+  /*background-color: #eee;*/
+  width: 22%;
+
 }
 
 .right-sidebar {
   float: left;
   width: 11%;
+  background-color: #f4f4f4;
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  margin-top: -3.75em;
+  text-align: center;
+  padding: 5px 0;
+
+}
+
+h4 {
+  background-color: #eee;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+  text-align: center;
 }
