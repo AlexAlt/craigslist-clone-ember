@@ -1,0 +1,26 @@
+{{#if newPostForm}}
+
+  <p>New post</p>
+
+    <form>
+
+        <div class="">
+          <label for="title">Title</label>
+          {{input value=title id="title"}}
+        </div>
+
+        <div>
+          <label for="content">Content</label>
+          {{textarea rows="20" value=content id="content"}}
+        </div>
+
+        <div class="">
+          <label for="image">Image URL</label>
+          {{input value=image id="image"}}
+        </div>
+
+      <button style="border-width: thick; background-color:gray; color:white;" {{action 'savePost' post}}>Save</button>
+    </form>
+  {{else}}
+  <button {{action 'showNewPostForm'}}>make a new post</button>
+{{/if}}

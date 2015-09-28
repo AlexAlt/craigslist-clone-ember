@@ -1,1 +1,8 @@
 <h3>{{model.name}}</h3>
+
+{{#each model.posts as |post|}}
+  {{post.title}}
+{{/each}}
+
+
+{{new-post-form post=post category=model savePost="savePost" }}
