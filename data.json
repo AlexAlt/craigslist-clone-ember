@@ -1,0 +1,56 @@
+{"categories": [{
+    "name":"activities",
+    "parentCategory": "community"
+  }, {
+    "name":"local news",
+    "parentCategory": "community"
+  },{
+    "name":"strictly platonic",
+    "parentCategory": "personals"
+  },{
+    "name":"missed connections",
+    "parentCategory": "personals"
+  },{
+    "name":"apple",
+    "parentCategory": "discussion forums"
+  },{
+    "name":"help",
+    "parentCategory": "discussion forums"
+  },{
+    "name":"photo",
+    "parentCategory": "discussion forums"
+  },{
+    "name":"apts/housing",
+    "parentCategory": "housing"
+  },{
+    "name":"antiques",
+    "parentCategory": "for sale"
+  },{
+    "name":"farm+garden",
+    "parentCategory": "for sale"
+  },{
+    "name":"automotive",
+    "parentCategory": "services"
+  },{
+    "name":"legal",
+    "parentCategory": "services"
+  },{
+    "name":"accounting+finance",
+    "parentCategory": "jobs"
+  },{
+    "name":"computer",
+    "parentCategory": "gigs"
+  },{
+    "name":"event",
+    "parentCategory": "gigs"
+  }],
+  "posts": [{
+    "title": "I offered you pringles...",
+    "content": "U bought my dining room table, I offered u pringles 2 stay and hang out but u didn't have the time. Let's try again maybe w/ doritos? Text me ne time @five-4-one-22-sex-nine",
+    "image": "http://www.paulandstorm.com/wp-content/uploads/Image/Pingles-Sad.jpg"
+  },{
+    "title": "Granny's old toothbrush",
+    "content": "Nana's gone but her brush remains. $10 near mint. Serious buyers only. Email denturedame@gmail.com",
+    "image": "http://americasfavoritetool.weebly.com/uploads/1/5/5/4/15547912/34445_orig.jpeg"
+  }]
+}
