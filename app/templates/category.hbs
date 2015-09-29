@@ -3,8 +3,10 @@
   {{new-post-form category=model savePost="savePost" }}
 </div>
 
-<ul>
-{{#each model.posts as |post|}}
-  <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
-{{/each}}
-</ul>
+<div class="posts-column">
+  <ul>
+  {{#each model.posts as |post|}}
+    <li><span class="date-styles">{{post-date post.date_added}}</span>  {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
+  {{/each}}
+  </ul>
+</div>
