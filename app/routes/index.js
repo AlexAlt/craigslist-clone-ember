@@ -40,6 +40,9 @@ export default Ember.Route.extend({
           category.reload();
         });
         this.transitionTo('index');
+      },
+      searchPosts(query) {
+        this.transitionTo('search', query);
       }
     }
 });

@@ -1,0 +1,6 @@
+<ul>
+  <h3>Results:</h3>
+  {{#each model as |result|}}
+  <li>{{#link-to 'post' result.id}}{{result.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>

@@ -1,21 +1,19 @@
 {{#if newCategoryForm}}
 
-<p>New category</p>
-
 <form>
-
   <div class="">
-    <label for="name">Name</label>
-    {{input value=name id="name"}}
+    <label for="name">name</label>
+    {{input value=name id="name" placeholder="e.g. web dev"}}
   </div>
 
   <div>
-    <label for="parentCategory">Parent Category</label>
-    {{input value=parentCategory id="parentCategory"}}
+    <label for="parentCategory">parent category</label>
+    {{input value=parentCategory id="parentCategory" placeholder="e.g. jobs"}}
   </div>
 
-  <button style="border-width: thick; background-color:gray; color:white;" {{action 'saveCategory' category}}>Save</button>
+  <button  {{action 'saveCategory' category}}>save</button>
+  <button {{action 'hideNewCategoryForm'}}>cancel</button>
 </form>
-<!-- {{else}}
-<button {{action 'showNewCategoryForm'}}>make a new category</button> -->
+{{else}}
+<button {{action 'showNewCategoryForm'}}>make a new category</button>
 {{/if}}

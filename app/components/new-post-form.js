@@ -7,6 +7,9 @@ export default Ember.Component.extend({
     showNewPostForm() {
       this.set('newPostForm', true);
     },
+    hideNewPostForm() {
+      this.set('newPostForm', false);
+    },
     savePost() {
       var imageDefault = "assets/images/camera.jpg";
       var params = {

@@ -10,7 +10,7 @@
 <div class="posts-column">
   <ul>
   {{#each model.posts as |post|}}
-    <li><span class="date-styles">{{post-date post.date_added}}</span> {{#link-to 'post' post.id class="post-txt"}}{{post.title}}{{/link-to}}</li>
+    <li><span class="date-styles">{{post-date post.date_added}}</span> &nbsp; &nbsp;{{#link-to 'post' post.id class="post-txt"}}{{post.title}}{{/link-to}}</li>
   {{/each}}
   </ul>
 </div>
