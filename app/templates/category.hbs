@@ -1,8 +1,10 @@
-<h3>{{model.name}}</h3>
+<div class="categories-left-sidebar">
+  <h3>{{model.name}}</h3>
+  {{new-post-form category=model savePost="savePost" }}
+</div>
 
+<ul>
 {{#each model.posts as |post|}}
-  {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}
+  <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
 {{/each}}
-
-
-{{new-post-form category=model savePost="savePost" }}
+</ul>

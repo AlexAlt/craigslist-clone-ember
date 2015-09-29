@@ -31,5 +31,15 @@ export default Ember.Route.extend({
           return categories.filterBy('parentCategory', 'gigs');
         }),
       });
+    },
+    actions: {
+      saveCategory(params) {
+        var newCategory = this.store.createRecord('category', params);
+        newCategory.save();
+        params.category.save().then(function(category) {
+          category.reload();
+        });
+        this.transitionTo('index');
+      }
     }
 });

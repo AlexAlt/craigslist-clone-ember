@@ -79,3 +79,13 @@ h4 {
   border-bottom: 1px #ccc solid;
   text-align: center;
 }
+
+.categories-left-sidebar {
+  width: 20%;
+  float: left;
+}
+
+li {
+  margin: 5px;
+  list-style-image: url('http://www.foreclosuredeals.com/images/icon-star-gray.gif');
+}

@@ -8,10 +8,11 @@ export default Ember.Component.extend({
       this.set('newPostForm', true);
     },
     savePost() {
+      var imageDefault = "assets/images/camera.jpg";
       var params = {
         title: this.get('title'),
         content: this.get('content'),
-        image: this.get('image'),
+        image: this.get('image') || imageDefault,
         category: this.get('category')
       };
       this.set('newPostForm', false);
