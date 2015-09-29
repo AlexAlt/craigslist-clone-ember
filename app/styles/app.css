@@ -49,6 +49,47 @@
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
+  margin-bottom: 10px;
+}
+
+.discussion-forums-section {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  margin-bottom: 10px;
+}
+
+.personals-section {
+  margin-bottom: 10px;
+}
+
+.housing-section {
+  margin-bottom: 10px;
+}
+
+.for-sale-section {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  margin-bottom: 10px;
+}
+
+.services-section {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  margin-bottom: 10px;
+}
+
+.jobs-section {
+  margin-bottom: 10px;
+}
+
+.gigs-section {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  margin-bottom: 10px;
 }
 
 .housing-column {
@@ -84,6 +125,7 @@ h4 {
   border-top: 1px #ccc solid;
   border-bottom: 1px #ccc solid;
   text-align: center;
+  margin: 0px;
 }
 
 .categories-left-sidebar {
@@ -110,7 +152,7 @@ li {
   background: #eee;
   border-bottom: 1px solid #ccc;
   width: 100%;
-  position: fixed;
+  /*position: fixed;*/
   /*margin: none;
   padding: none;*/
 }
@@ -130,8 +172,12 @@ li {
   font-family: "Arial", sans-serif;
 }
 
-a, .txt {
+.txt {
   text-decoration: none;
   border-bottom: 1px solid #ccc;
-  font-size: 95%;
+  font-size: 85%;
+}
+
+.post-txt {
+  font-size: 1.2em;
 }

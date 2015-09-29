@@ -3,45 +3,67 @@
 <div class="center-column arialize">
 
   <div class="community-column">
-      <h4>community</h4>
+
+    <h4>community</h4>
     <div class="community-section">
       {{#each sortedCommunityCategories as |category|}}
-        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
       {{/each}}
     </div>
+
     <h4>personals</h4>
-    {{#each sortedPersonalsCategories as |category|}}
-      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
-    {{/each}}
-  <h4>discussion forums</h4>
-    {{#each sortedDiscussionCategories as |category|}}
-      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
-    {{/each}}
+    <div class="personals-section">
+      {{#each sortedPersonalsCategories as |category|}}
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
+      {{/each}}
+    </div>
+
+    <h4>discussion forums</h4>
+    <div class="discussion-forums-section">
+      {{#each sortedDiscussionCategories as |category|}}
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
+      {{/each}}
+    </div>
   </div>
 
   <div class="housing-column">
+
     <h4>housing</h4>
+    <div class="housing-section">
       {{#each sortedHousingCategories as |category|}}
-        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
       {{/each}}
+    </div>
+
     <h4>for sale</h4>
+    <div class="for-sale-section">
       {{#each sortedForSaleCategories as |category|}}
-        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
       {{/each}}
+    </div>
+
     <h4>services</h4>
+    <div class="services-section">
       {{#each sortedServicesCategories as |category|}}
-        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
       {{/each}}
+    </div>
   </div>
 
   <div class="jobs-column">
+
     <h4>jobs</h4>
-    {{#each sortedJobsCategories as |category|}}
-      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
-    {{/each}}
+    <div class="jobs-section">
+      {{#each sortedJobsCategories as |category|}}
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
+      {{/each}}
+    </div>
+
     <h4>gigs</h4>
-    {{#each sortedGigsCategories as |category|}}
-      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
-    {{/each}}
+    <div class="gigs-section">
+      {{#each sortedGigsCategories as |category|}}
+        {{#link-to 'category' category.id class="txt"}}{{category.name}}{{/link-to}}<br>
+      {{/each}}
+    </div>
   </div>
 </div>
