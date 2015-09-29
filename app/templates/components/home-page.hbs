@@ -1,45 +1,45 @@
 {{yield}}
 
-<div class="center-column">
+<div class="center-column arialize">
 
   <div class="community-column">
     <h4>community</h4>
-    {{#each categories.communityCategories as |category|}}
-      {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+    {{#each sortedCommunityCategories as |category|}}
+      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
     {{/each}}
     <h4>personals</h4>
-    {{#each categories.personalsCategories as |category|}}
-      {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+    {{#each sortedPersonalsCategories as |category|}}
+      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
     {{/each}}
   <h4>discussion forums</h4>
-    {{#each categories.discussionCategories as |category|}}
-      {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+    {{#each sortedDiscussionCategories as |category|}}
+      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
     {{/each}}
   </div>
 
   <div class="housing-column">
     <h4>housing</h4>
-      {{#each categories.housingCategories as |category|}}
-        {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+      {{#each sortedHousingCategories as |category|}}
+        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
       {{/each}}
     <h4>for sale</h4>
-      {{#each categories.forsaleCategories as |category|}}
-        {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+      {{#each sortedForSaleCategories as |category|}}
+        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
       {{/each}}
     <h4>services</h4>
-      {{#each categories.servicesCategories as |category|}}
-        {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+      {{#each sortedServicesCategories as |category|}}
+        <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
       {{/each}}
   </div>
 
   <div class="jobs-column">
     <h4>jobs</h4>
-    {{#each categories.jobsCategories as |category|}}
-      {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+    {{#each sortedJobsCategories as |category|}}
+      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
     {{/each}}
     <h4>gigs</h4>
-    {{#each categories.gigsCategories as |category|}}
-      {{#link-to 'category' category.id}}{{category.name}}{{/link-to}}
+    {{#each sortedGigsCategories as |category|}}
+      <span class="txt">{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</span>
     {{/each}}
   </div>
 </div>

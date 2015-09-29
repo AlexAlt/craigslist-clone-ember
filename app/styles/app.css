@@ -98,3 +98,34 @@ li {
 .posts-column {
   float: left;
 }
+
+.category-header {
+  height: 2.2em;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: fixed;
+  /*margin: none;
+  padding: none;*/
+}
+
+
+#CL-logo {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin: .2125em .4em;
+  padding: 0.25em;
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+}
+
+.arialize {
+  font-family: "Arial", sans-serif;
+}
+
+a, .txt {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 95%;
+}
